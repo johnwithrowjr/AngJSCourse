@@ -6,7 +6,7 @@ var itemizeList = function(txtList)
   }
   else
   {
-    var temp = txtList.split(";");
+    var temp = txtList.split(",");
     var result = temp.length;
   };
   return result;
@@ -16,7 +16,7 @@ var assess = function(numItems)
 {
   if (numItems < 1)        { resp = "Please enter data first." }
   else if (numItems > 3)   { resp = "Too much!" }
-  else                     { resp = "Looks good to me!" };
+  else                     { resp = "Enjoy!" };
   return resp;
 };
 
